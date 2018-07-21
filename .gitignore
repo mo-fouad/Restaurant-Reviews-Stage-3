@@ -53,6 +53,7 @@ fabric.properties
 
 .idea/inspectionProfiles/
 .idea/misc.xml
+.idea/vcs.xml
 .idea/workspace.xml
 
 node_modules/
