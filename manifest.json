@@ -1,0 +1,21 @@
+{
+  "short_name": "Restaurants",
+  "name": "Restaurant Review small application",
+  "icons": [
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html?launcher=true",
+  "background_color": "#fdfdfd",
+  "display": "fullscreen",
+  "scope": "/localhost:8000/",
+  "theme_color": "#3397DB"
+}
