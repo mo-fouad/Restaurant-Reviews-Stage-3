@@ -280,6 +280,7 @@ nav h1 a {
     right: 0;
     top: 70px;
     width: 50%;
+    z-index: 10;
 }
 
 .inside #map {
@@ -384,7 +385,114 @@ nav h1 a {
     background: #e0e0e0;
 }
 
+/* stage 3 */
 
+.restaurant-img-cont {
+    position: relative;
+}
+
+.restaurant-add-favourite {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#adding-review-container {
+    padding: 30px;
+}
+
+#adding-review-container p {
+    margin-top: 0;
+    color: #f58500;
+    font-style: italic;
+}
+.reviews-form-item {
+    margin: 25px 0;
+}
+
+.reviews-form-item label {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.reviews-form-item input, .reviews-form-item textarea,.reviews-form-item select {
+    border: 0;
+    font-size: 16px;
+    width: 100%;
+    background: #fdfdfd;
+    padding: 10px 5px;
+    border-bottom: 1px solid #f1825e;
+    outline: 0;
+}
+.reviews-form-item-button {
+    text-align: center;
+}
+.reviews-form-item input[type="submit"] {
+    max-width: 350px;
+}
+
+.restaurant-add-favourite input{
+    display: none;
+}
+.restaurant-add-favourite input:checked + span{
+    border-bottom: 35px solid #f58500;
+}
+.restaurant-add-favourite input:checked + span:after{
+    border-bottom: 40px solid #f58500;
+}
+.restaurant-add-favourite input:checked + span:before{
+    border-bottom: 35px solid #f58500;
+ }
+
+.restaurant-add-favourite span{
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: #ffffff8a;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #ffffff;
+    border-left: 50px solid transparent;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+}
+.restaurant-add-favourite span:after{
+    border-bottom: 40px solid #ffffff;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -27px;
+    left: -33px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    -moz-transform:    rotate(-35deg);
+    -ms-transform:     rotate(-35deg);
+    -o-transform:      rotate(-35deg);
+}
+.restaurant-add-favourite span:before{
+    position: absolute;
+    display: block;
+    color: #ffffff8a;;
+    top: 3px;
+    left: -54px;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #ffffff;
+    border-left: 50px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform:    rotate(-70deg);
+    -ms-transform:     rotate(-70deg);
+    -o-transform:      rotate(-70deg);
+    content: '';
+}
 /* Adding Code for Responsive Design */
 
 

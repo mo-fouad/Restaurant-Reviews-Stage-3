@@ -38,13 +38,22 @@
 <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-        <div id="map" role="application"></div>
+        <div id="map" role="application" role="application" aria-hidden="true" aria-describedby="map-text"></div>
+        <span hidden id="map-text">restaurant location on the map</span>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
         <h1 id="restaurant-name"></h1>
-        <img id="restaurant-img">
+        <div class="restaurant-img-cont">
+            <img id="restaurant-img">
+            <div class="restaurant-add-favourite">
+                <label for="addToFavourite">
+                    <input type="checkbox" id="addToFavourite" class="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
         <p id="restaurant-cuisine"></p>
         <p id="restaurant-address"></p>
         <table id="restaurant-hours"></table>
@@ -55,6 +64,36 @@
         <ul id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
+
+    <!-- Adding Review Form -->
+    <section id="adding-review-container">
+        <p>
+            We would love to know your opinion of this restaurant, <br> anna add some review about it ?! </p>
+
+        <form class="reviews-form" action="">
+            <div class="reviews-form-item">
+                <label for="name">What is your name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="reviews-form-item">
+                <label for="rating">what is your rating for this restaurant ?</label>
+                <select name="rating" id="rating">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="reviews-form-item">
+                <label for="review">wanna add some review for it ?!</label>
+                <textarea name="review" id="review" rows="4" placeholder="Write your review here" required></textarea>
+            </div>
+            <div class="reviews-form-item reviews-form-item-button ">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </section>
 </main>
 <!-- End main -->
 

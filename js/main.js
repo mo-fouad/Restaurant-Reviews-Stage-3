@@ -164,7 +164,7 @@ createRestaurantHTML = (restaurant) => {
 
     const ratingStar = document.createElement('h1');
     ratingStar.className = "restaurant-cont-rating";
-    ratingStar.innerHTML = DBHelper.gettingRating(restaurant);
+   // ratingStar.innerHTML = DBHelper.gettingRating(restaurant); removing review from home page
     contImage.append(ratingStar);
 
     const cont = document.createElement('div');
