@@ -1,4 +1,4 @@
-## Project Overview: Stage 2
+## Project Overview: Stage 3
 
 to run the project please install npm packages. > IDB
 ```
