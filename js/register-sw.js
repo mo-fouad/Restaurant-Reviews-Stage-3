@@ -39,9 +39,11 @@ if ('serviceWorker' in navigator) {
 
 
 // Tracing if app is online or offline
+//https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/Online_and_offline_events
 
 window.addEventListener('online', onOnline);
 window.addEventListener('offline', onOffline);
+
 function onOnline() {
     console.log('Going online');
     DBHelper.submitOfflineReviews();

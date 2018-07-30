@@ -205,24 +205,25 @@ nav h1 a {
     overflow: hidden;
     position: relative;
 }
-#restaurants-list li .restaurant-cont-img:after {
-    content: '';
-    position: absolute;
-    bottom: -100%;
-    height: 100%;
-    width: 100%;
-    display: block;
-    z-index: 2;
-    box-shadow: 0px -30px 20px rgba(255,255,255,0.5);
-    transition: all 200ms;
-}
 
-#restaurants-list li:hover .restaurant-cont-img:after {
-    height: 100%;
-    bottom: 0;
-    background: rgba(255,255,255,.8);
-    transition: all 200ms;
-}
+/*#restaurants-list li .restaurant-cont-img:after {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*bottom: -100%;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*display: block;*/
+    /*z-index: 2;*/
+    /*box-shadow: 0px -30px 20px rgba(255,255,255,0.5);*/
+    /*transition: all 200ms;*/
+/*}*/
+
+/*#restaurants-list li:hover .restaurant-cont-img:after {*/
+    /*height: 100%;*/
+    /*bottom: 0;*/
+    /*background: rgba(255,255,255,.8);*/
+    /*transition: all 200ms;*/
+/*}*/
 
 
 #restaurants-list .restaurant-img {
@@ -255,9 +256,9 @@ nav h1 a {
 #restaurants-list li button {
     background-color: orange;
     color: #fff;
-    display: inline-block;
+    display: block;
     font-size: 10pt;
-    margin: 15px 0 0;
+    margin: 15px auto 0 auto;
     padding: 8px 30px 10px;
     text-align: center;
     text-decoration: none;
@@ -328,7 +329,7 @@ nav h1 a {
 
 }
 
-#restaurant-container, #reviews-container {
+#restaurant-container, #reviews-container,#adding-review-container {
     border-bottom: 1px solid #d9d9d9;
     border-top: 1px solid #fff;
     padding: 140px 30px 30px;
@@ -363,6 +364,9 @@ nav h1 a {
     border-top-left-radius: 20px;
 }
 
+#reviews-list li.custom{
+    background: #ffe1be;
+}
 #reviews-list li p {
     margin: 0 0 10px;
 }
@@ -512,7 +516,7 @@ nav h1 a {
         width: 100%;
         height:450px;
     }
-    #restaurant-container, #reviews-container {
+    #restaurant-container, #reviews-container,#adding-review-container {
         width: 100%;
         padding: 30px;
     }

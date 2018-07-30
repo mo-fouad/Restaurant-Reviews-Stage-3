@@ -162,10 +162,11 @@ createRestaurantHTML = (restaurant) => {
     image.src = DBHelper.imageUrlForRestaurant(restaurant);
     contImage.append(image);
 
-    const ratingStar = document.createElement('h1');
-    ratingStar.className = "restaurant-cont-rating";
-   // ratingStar.innerHTML = DBHelper.gettingRating(restaurant); removing review from home page
-    contImage.append(ratingStar);
+    // Adding Rating Start > to be added to restaurant.html
+    // const ratingStar = document.createElement('h1');
+    // ratingStar.className = "restaurant-cont-rating";
+    // ratingStar.innerHTML = DBHelper.gettingRating(restaurant);
+    // contImage.append(ratingStar);
 
     const cont = document.createElement('div');
     cont.className = 'restaurant-cont';
